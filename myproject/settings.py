@@ -179,6 +179,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+MEDIA_URL = '/images/'
+
 
 
 STATICFILES_DIRS = [
@@ -186,6 +188,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'frontend/build/static'
 
 ]
+
+MEDIA_ROOT = BASE_DIR / 'frontend/build/static/media'
+
 
 
 CORS_ALLOW_ALL_ORIGINS = True
