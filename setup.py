@@ -9,6 +9,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
+    setup_requires=['wheel'],  # Add setup_requires parameter here
     entry_points={
         'console_scripts': [
             'manage.py = manage:main',
