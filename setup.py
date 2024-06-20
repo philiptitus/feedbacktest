@@ -17,7 +17,7 @@ with open('requirements.txt') as f:
 extra_directories = ['frontend', 'feedbackhub']  # Add more if needed
 
 # Collect all package directories
-package_dirs = [  'frontend']
+package_dirs = ['*']
 
 # Collect all files in these directories
 package_data = {}
