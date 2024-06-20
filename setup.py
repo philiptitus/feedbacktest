@@ -17,7 +17,7 @@ with open('requirements.txt') as f:
 extra_directories = ['frontend', 'feedbackhub']  # Add more if needed
 
 # Collect all package directories
-package_dirs = ['*']
+package_dirs = ['app']
 
 # Collect all files in these directories
 package_data = {}
@@ -25,7 +25,7 @@ for dir_name in package_dirs:
     package_data[dir_name] = find_recursive(dir_name)
 
 setup(
-    name='app',
+    name='myapp',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
